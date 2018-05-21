@@ -1,5 +1,0 @@
-import csv
-with open('csvtest.csv', newline='', encoding='utf-8') as csvfile:
-    spamreader = csv.reader(csvfile, dialect='excel', delimiter=',')
-    for row in spamreader:
-        print(', '.join(row))
