@@ -48,27 +48,22 @@
 <form method="post" action="form-handler.php">
   <div>
     <h4>Film Name</h4>
-    <label for="film_name">Film Name: <span class="required">*</span> </label>
-    <input type="text" id="film_name" film_name="film_name" value="" placeholder="A Clockwork Orange" required="required" autofocus />
+    <label for="title">title: <span class="required">*</span> </label>
+    <input type="text" id="title" title="title" value="" placeholder="A Clockwork Orange" required="required" autofocus />
   </div>
 	
   <div>
     <h4>Director Name</h4>
-    <label for="director_name">Director Name: <span class="required">*</span> </label>
-    <input type="text" id="director_name" director_name="director_name" value="" placeholder="Quentin Tarantino" required="required" autofocus />
+    <label for="directors">directors: <span class="required">*</span> </label>
+    <input type="text" id="directors" directors="directors" value="" placeholder="Quentin Tarantino" required="required" autofocus />
   </div>
 	
   <div>
-    <h4>Genre</h4>
-    <label for="genre">Genre: <span class="required">*</span> </label>
-    <input type="text" id="genre" genre="genre" value="" placeholder="Drama" required="required" autofocus />
+    <h4>Film rating</h4>
+    <label for="film_rating">Film rating: <span class="required">*</span> </label>
+    <input type="number" id="film_rating" film_rating="film_rating" value="" placeholder="Drama" required="required" autofocus />
   </div>
 	
-  <div>
-    <h4>Main Production Country</h4>
-    <label for="main_prod_country">Main Production Country: <span class="required">*</span> </label>
-    <input type="text" id="main_prod_country" main_prod_country="main_prod_country" value="" placeholder="Brazil" required="required" autofocus />
-  </div>
   
   <div>
     <input type="submit" value="Submit" id="submit" />
