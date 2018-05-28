@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log your film</title>
+	<link rel="stylesheet" href="log-a-film.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<nav class="site-nav">
+			<ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="title">
+			<div class="title_content">
+				<h1>Log a film</h1>
+			</div>
+		</section>
+		<!-- 
+		<section class="action">
+			<div class="action_content">
+				<h2><a href="#">Search field</a></h2>
+			</div>
+		</section>
+		-->
+		<section class="action">
+			<div class="action_content">
+		<!-- 
+  Replace form-handler.php with URL where to send the form-data when the form is submitted
+  Goto http://w3c.github.io/html-reference/input.text.html#input.text for more information on all attributes that can be used with text input field
+{
+  "rating_acting": 3.5,
+  "rating_cinematography": 4,
+  "rating_directing": 4,
+  "rating_editing": 5,
+  "rating_movie": 8.4,
+  "rating_script": 4.5,
+  "year_released": "2012"
+}
+-->
+<form method="post" action="form-handler.php">
+  <div>
+    <h4>Film Name</h4>
+    <label for="film_name">Film Name: <span class="required">*</span> </label>
+    <input type="text" id="film_name" film_name="film_name" value="" placeholder="A Clockwork Orange" required="required" autofocus />
+  </div>
+	
+  <div>
+    <h4>Director Name</h4>
+    <label for="director_name">Director Name: <span class="required">*</span> </label>
+    <input type="text" id="director_name" director_name="director_name" value="" placeholder="Quentin Tarantino" required="required" autofocus />
+  </div>
+	
+  <div>
+    <h4>Genre</h4>
+    <label for="genre">Genre: <span class="required">*</span> </label>
+    <input type="text" id="genre" genre="genre" value="" placeholder="Drama" required="required" autofocus />
+  </div>
+	
+  <div>
+    <h4>Main Production Country</h4>
+    <label for="main_prod_country">Main Production Country: <span class="required">*</span> </label>
+    <input type="text" id="main_prod_country" main_prod_country="main_prod_country" value="" placeholder="Brazil" required="required" autofocus />
+  </div>
+  
+  <div>
+    <input type="submit" value="Submit" id="submit" />
+  </div>
+</form>
+				</div>
+		</section>
+		
+	</main>
+</body>
+</html>
