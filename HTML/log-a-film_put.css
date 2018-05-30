@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+html,
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: orange;
+}
+
+h1 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+
+.post_area {
+  position: static;
+  height: 100vh;
+  background-color: #71B8FA;
+}
+
+.post_content {
+  color: #000000;
+  padding: 2em;
+}
+
+input:focus {
+  border-color: #000;
+}
